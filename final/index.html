@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="manifest" src="/pwa-caching/final/manifest.json" />
+  <title>Star Wars | Characters</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <img class="logo" src="assets/images/starwarslogo.svg" alt="Star Wars Logo" />
+      <h1>Characters</h1>
+    </header>
+
+    <div class="characters"></div>
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <footer>
+      <p class="copyright">For educational purposes only. All logos, characters, artwork, stories, information, names, and other elements associated
+        thereto are the sole and exclusive property of Lucasfilm Limited.</p>
+    </footer>
+
+    <script type="text/javascript">
+      // Register and install Service Worker
+      if ('serviceWorker' in navigator) {
+
+        // Checks if there's already a serviceWorker in control
+        if (!navigator.serviceWorker.controller) {
+          navigator.serviceWorker
+            .register('/pwa-caching/final/sw.js', {
+              scope: '/pwa-caching/final/'
+            })
+            .then(function (reg) {
+              if (reg.installing) {
+                console.log('Service worker installing');
+              } else if (reg.waiting) {
+                console.log('Service worker installed');
+              } else if (reg.active) {
+                console.log('Service worker active');
+              }
+            })
+            .catch(function (error) {
+              // registration failed
+              console.log('Registration failed with ' + error);
+            });
+        }
+      }
+    </script>
+
+    <!-- data.js is for illustration purposes only; realistically you'd call an API -->
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
