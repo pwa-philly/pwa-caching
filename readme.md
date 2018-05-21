@@ -16,4 +16,5 @@ That's it!
 * [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
-* [Service Worker Cookbook](https://serviceworke.rs/immediate-claim_service-worker_doc.html)
+* [Service Worker Cookbook](https://serviceworke.rs/)
+* [Offline Cookbook](https://jakearchibald.com/2014/offline-cookbook/)
