@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.3"
   },
