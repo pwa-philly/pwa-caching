@@ -33,8 +33,8 @@
         // Checks if there's already a serviceWorker in control
         if (!navigator.serviceWorker.controller) {
           navigator.serviceWorker
-            .register('/pwa-caching/final/sw.js', {
-              scope: '/pwa-caching/final/'
+            .register('/sw.js', {
+              scope: '/'
             })
             .then(function (reg) {
               if (reg.installing) {
