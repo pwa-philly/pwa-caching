@@ -3,7 +3,7 @@
 Steps to get started:
 
 ```
-git clone https://github.com/geekychristine/pwa-caching.git
+git clone https://github.com/pwa-philly/pwa-caching.git
 cd pwa-caching
 npm install
 npm start
