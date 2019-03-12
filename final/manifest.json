@@ -10,6 +10,11 @@
       "src": "/assets/images/icons/icon_60pt@3x.png",
       "type": "image/png",
       "sizes": "180x180"
+    },
+    {
+      "src": "/assets/images/icons/512px.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "background_color": "#272727",
