@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
