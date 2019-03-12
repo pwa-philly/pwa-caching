@@ -1,5 +1,5 @@
 const express = require('express');
-const sslRedirect = require('final/utils/sslRedirect');
+const sslRedirect = require('./utils/sslRedirect');
 
 const app = express();
 const port = process.env.PORT || 3000;
